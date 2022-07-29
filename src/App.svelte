@@ -10,7 +10,6 @@ void main(){
     gl_Position=a_Position;
 }`
 	const fragShader = `
-// global remix - Del 30/10/2019
 #ifdef GL_ES
 precision highp float;
 #endif
@@ -49,8 +48,7 @@ void main(void)
   c+=snow(uv,5.);
   vec3 finalColor=(vec3(.2,.2,.2))*c*3.5;
   gl_FragColor=vec4(finalColor,c*0.9);
-}
-	`
+}`
 	export let width: string = '320px'
 	export let height: string = '240px'
 	export let indicesCount: number = 5
