@@ -85,9 +85,3 @@ void main(void)
 </script>
 
 <canvas bind:this={canvasEl} width={width} height={height}></canvas>
-
-<style>
-	canvas {
-		background-color: black;
-	}
-</style>
