@@ -1,4 +1,4 @@
-<svelte:options tag="my-smog" />
+<svelte:options tag="space-shader-effect" />
 
 <script lang="ts">
 	import type { IGlobParam } from './gl_types';
@@ -9,8 +9,7 @@
 void main(){
     gl_Position=a_Position;
 }`
-	const fragShader = `
-#ifdef GL_ES
+	const fragShader = `#ifdef GL_ES
 precision highp float;
 #endif
 

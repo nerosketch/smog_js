@@ -1,7 +1,6 @@
 import type { IGlobParam, IGlSrv } from "./gl_types"
 
 function init (canvas: HTMLCanvasElement, vertexShader: string, fragmentShader: string, indicesStart: number, indicesCount: number): IGlSrv {
-  //获取webgl上下文
   const gl = canvas.getContext('webgl');
   const vertShader = gl.createShader(gl.VERTEX_SHADER);
   gl.shaderSource(vertShader, vertexShader);
@@ -16,11 +15,8 @@ function init (canvas: HTMLCanvasElement, vertexShader: string, fragmentShader: 
   gl.useProgram(glProgram);
   const a_PointSize = gl.getAttribLocation(glProgram,'a_PointSize');
   gl.vertexAttrib1f(a_PointSize,30.0);
-  //1.创建缓冲区对象
   const vertexBuffer = gl.createBuffer();
-  // 2.绑定缓冲区对象（表明了缓冲区对象的用途）
   gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
-  // 3.向缓冲区对象中写入数据
   const tempData=new Float32Array([
       -1, -1, 
       -1, 1,
@@ -29,14 +25,10 @@ function init (canvas: HTMLCanvasElement, vertexShader: string, fragmentShader: 
       -1, -1
   ]);
   gl.bufferData(gl.ARRAY_BUFFER, tempData, gl.STATIC_DRAW);
-  // 4.获取变量存储位置
   const a_Position = gl.getAttribLocation(glProgram, 'a_Position');
-  // 5.把缓冲区对象分配给a_Position变量
   gl.vertexAttribPointer(a_Position, 2, gl.FLOAT, false, 0, 0);
-  // 6.连接缓冲区对象和a_Position变量
   gl.enableVertexAttribArray(a_Position);
   gl.drawArrays(gl.TRIANGLE_STRIP, indicesStart, indicesCount);
-  //gl.drawArrays(gl.POINTS, 0, 3);
 
   return {
     gl,

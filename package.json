@@ -1,11 +1,20 @@
 {
-  "name": "elem",
-  "private": true,
-  "version": "0.0.0",
+  "name": "space-shader-effect",
+  "private": false,
+  "version": "1.0.0",
+  "description": "WebGL fragment space effect. WebComponent built with Svelte",
+  "keywords": ["Svelte", "web component", "glsl", "webgl", "fragment", "typescript"],
+  "author": "Dmitry Novikov <nerosketch@gmail.com>",
+  "files": ["dist"],
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nerosketch/space-shader-effect.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "install": "mv ./dist/space-shader-effect.umd.js ./index.js && rm -rf dist",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
