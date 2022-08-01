@@ -8,8 +8,8 @@ export default defineConfig({
     lib: {
       formats: ['umd'],
       entry: path.resolve(__dirname, "src/main.ts"),
-      name: 'space-shader-effect',
-      fileName: (format) => `space-shader-effect.${format}.js`
+      name: 'space-shader-box',
+      fileName: (format) => `space-shader-box.${format}.js`
     }
   },
   plugins: [svelte({

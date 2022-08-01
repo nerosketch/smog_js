@@ -1,4 +1,4 @@
-<svelte:options tag="space-shader-effect" />
+<svelte:options tag="space-shader-box" />
 
 <script lang="ts">
 	import type { IGlobParam } from './gl_types';
