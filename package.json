@@ -1,7 +1,7 @@
 {
   "name": "space-shader-box",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WebGL fragment space effect. WebComponent built with Svelte",
   "keywords": ["Svelte", "web component", "glsl", "webgl", "fragment", "typescript"],
   "author": "Dmitry Novikov <nerosketch@gmail.com>",
