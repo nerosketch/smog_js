@@ -39,6 +39,10 @@ Or, you may use it in simple static project like this:
 </html>
 ```
 
-You will have just "canvas" element with stars effect: ![Canvas element](./img/canvas.png)
+You will have just "canvas" element with stars effect:
 
-You may customize it with your own styles. For example my login form: ![login form](./img/login-form.png).
+![Canvas element](./img/canvas.png)
+
+You may customize it with your own styles. For example my login form:
+
+![login form](./img/login-form.png).

@@ -5,7 +5,7 @@
   "description": "WebGL fragment space effect. WebComponent built with Svelte",
   "keywords": ["Svelte", "web component", "glsl", "webgl", "fragment", "typescript"],
   "author": "Dmitry Novikov <nerosketch@gmail.com>",
-  "files": ["dist"],
+  "files": ["dist", "img", "README.md"],
   "type": "module",
   "repository": {
     "type": "git",
