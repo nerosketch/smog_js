@@ -46,3 +46,5 @@ You will have just "canvas" element with stars effect:
 You may customize it with your own styles. For example my login form:
 
 ![login form](./img/login-form.png).
+
+Preview on [REPL](https://svelte.dev/repl/30f44138b75644149bb2aa645fc647a4?version=3.49.0)
